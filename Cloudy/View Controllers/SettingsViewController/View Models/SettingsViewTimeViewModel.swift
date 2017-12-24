@@ -26,7 +26,7 @@ struct SettingsViewTimeViewModel {
     }
     
     var accessoryType: UITableViewCellAccessoryType {
-        if UserDefaults.timeNotation() {
+        if UserDefaults.timeNotation() == timeNotation {
             return .checkmark
         } else {
             return .none

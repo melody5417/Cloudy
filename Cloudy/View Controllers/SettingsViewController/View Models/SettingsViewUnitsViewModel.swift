@@ -24,7 +24,7 @@ struct SettingsViewUnitsViewModel {
     }
     
     var accessoryType: UITableViewCellAccessoryType {
-        if UserDefaults.unitsNotation() {
+        if UserDefaults.unitsNotation() == unitsNotation {
             return .checkmark
         } else {
             return .none
