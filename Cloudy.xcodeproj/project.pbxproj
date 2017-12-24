@@ -13,6 +13,7 @@
 		4977F4591FEFE9A5007DEA56 /* SettingsViewTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977F4581FEFE9A5007DEA56 /* SettingsViewTimeViewModel.swift */; };
 		4977F45B1FEFEAF7007DEA56 /* SettingsViewUnitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977F45A1FEFEAF7007DEA56 /* SettingsViewUnitsViewModel.swift */; };
 		4977F45D1FEFEBCB007DEA56 /* SettingsViewTemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977F45C1FEFEBCB007DEA56 /* SettingsViewTemperatureViewModel.swift */; };
+		4977F4621FEFF0E7007DEA56 /* SettingsRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977F4611FEFF0E7007DEA56 /* SettingsRepresentable.swift */; };
 		CC08B9DB1DA206EE00754A85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */; };
 		CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */; };
 		CC08B9E11DA2169400754A85 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9E01DA2169400754A85 /* UserDefaults.swift */; };
@@ -46,6 +47,7 @@
 		4977F4581FEFE9A5007DEA56 /* SettingsViewTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModel.swift; sourceTree = "<group>"; };
 		4977F45A1FEFEAF7007DEA56 /* SettingsViewUnitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModel.swift; sourceTree = "<group>"; };
 		4977F45C1FEFEBCB007DEA56 /* SettingsViewTemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModel.swift; sourceTree = "<group>"; };
+		4977F4611FEFF0E7007DEA56 /* SettingsRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepresentable.swift; sourceTree = "<group>"; };
 		CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		CC08B9E01DA2169400754A85 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
@@ -104,11 +106,20 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		4977F4601FEFF0D5007DEA56 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4977F4611FEFF0E7007DEA56 /* SettingsRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		CC08B9D91DA206C300754A85 /* SettingsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4977F4571FEFE987007DEA56 /* View Models */,
+				4977F4601FEFF0D5007DEA56 /* Protocols */,
 				CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */,
+				4977F4571FEFE987007DEA56 /* View Models */,
 				CC08B9DC1DA20D8D00754A85 /* Table View Cells */,
 			);
 			path = SettingsViewController;
@@ -404,6 +415,7 @@
 				CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */,
 				4977F4591FEFE9A5007DEA56 /* SettingsViewTimeViewModel.swift in Sources */,
 				CC89B4381D9FE3D0006BFD6E /* AppDelegate.swift in Sources */,
+				4977F4621FEFF0E7007DEA56 /* SettingsRepresentable.swift in Sources */,
 				CC89B4521D9FECBE006BFD6E /* WeatherDayData.swift in Sources */,
 				CC89B4421D9FE5C6006BFD6E /* WeekViewController.swift in Sources */,
 				CC89B4501D9FEC2E006BFD6E /* WeatherData.swift in Sources */,
