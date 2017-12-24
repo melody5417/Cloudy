@@ -83,6 +83,8 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let section = Section(rawValue: indexPath.section) else { fatalError("Unexpected Section") }
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.reuseIdentifier, for: indexPath) as? SettingsTableViewCell else { fatalError("Unexpected Table View Cell") }
+        
+        var viewModel: SettingsRepresentable?
 
         switch section {
         case .time:
@@ -90,30 +92,24 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
                 fatalError("Unexpected Index Path")
             }
             
-            let viewModel =  SettingsViewTimeViewModel(timeNotation: timeNotation)
+            viewModel =  SettingsViewTimeViewModel(timeNotation: timeNotation)
             
-            cell.mainLabel.text = viewModel.text
-            cell.accessoryType = viewModel.accessoryType
         case .units:
             guard let unitsNotation = UnitsNotation(rawValue: indexPath.row) else { fatalError("Unexpected Index Path") }
             
-            // Initialize View Model
-            let viewModel = SettingsViewUnitsViewModel(unitsNotation: unitsNotation)
+            viewModel = SettingsViewUnitsViewModel(unitsNotation: unitsNotation)
             
-            // Configure Cell
-            cell.mainLabel.text = viewModel.text
-            cell.accessoryType = viewModel.accessoryType
         case .temperature:
             guard let temperatureNotation = TemperatureNotation(rawValue: indexPath.row) else { fatalError("Unexpected Index Path") }
             
-            // Initialize View Model
-            let viewModel = SettingsViewTemperatureViewModel(temperatureNotation: temperatureNotation)
-            
-            // Configure Cell
+            viewModel = SettingsViewTemperatureViewModel(temperatureNotation: temperatureNotation)
+        }
+
+        if let viewModel = viewModel {
             cell.mainLabel.text = viewModel.text
             cell.accessoryType = viewModel.accessoryType
         }
-
+        
         return cell
     }
 
