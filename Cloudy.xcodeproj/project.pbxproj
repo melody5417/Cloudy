@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4977F4521FEFAF5C007DEA56 /* DayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977F4511FEFAF5C007DEA56 /* DayViewViewModel.swift */; };
 		4977F4541FEFB5AE007DEA56 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977F4531FEFB5AE007DEA56 /* UIImage.swift */; };
+		4977F4561FEFDF45007DEA56 /* WeekViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977F4551FEFDF45007DEA56 /* WeekViewViewModel.swift */; };
 		CC08B9DB1DA206EE00754A85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */; };
 		CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */; };
 		CC08B9E11DA2169400754A85 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9E01DA2169400754A85 /* UserDefaults.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		4977F4511FEFAF5C007DEA56 /* DayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModel.swift; sourceTree = "<group>"; };
 		4977F4531FEFB5AE007DEA56 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		4977F4551FEFDF45007DEA56 /* WeekViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewViewModel.swift; sourceTree = "<group>"; };
 		CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CC08B9DD1DA20DB400754A85 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		CC08B9E01DA2169400754A85 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				4977F4511FEFAF5C007DEA56 /* DayViewViewModel.swift */,
+				4977F4551FEFDF45007DEA56 /* WeekViewViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				CC7854CD1D9FF99700E7836D /* WeatherViewController.swift in Sources */,
 				CC83E0D51F13BF3B00EB0CAC /* LocationsViewController.swift in Sources */,
 				4977F4521FEFAF5C007DEA56 /* DayViewViewModel.swift in Sources */,
+				4977F4561FEFDF45007DEA56 /* WeekViewViewModel.swift in Sources */,
 				CC89B4391D9FE3D0006BFD6E /* RootViewController.swift in Sources */,
 				CC89B44C1D9FEB73006BFD6E /* JSONDecodable.swift in Sources */,
 				CC89B4451D9FE897006BFD6E /* DataManager.swift in Sources */,
