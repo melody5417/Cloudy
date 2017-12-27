@@ -18,7 +18,7 @@ class DayViewViewModelTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
         // Load stub
-        let data = loadDataFromBundle()
+        let data = loadDataFromBundle(withName: "forecast", extension: "json")
         let weatherData: WeatherData = try! JSONDecoder.decode(data: data)
 
         // Initialize view model

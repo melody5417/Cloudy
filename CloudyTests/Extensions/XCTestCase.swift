@@ -10,9 +10,9 @@ import XCTest
 
 extension XCTestCase {
 
-    func loadDataFromBundle() -> Data {
+    func loadDataFromBundle(withName name: String, extension: String) -> Data {
         let bundle = Bundle(for: classForCoder)
-        let url = bundle.url(forResource: "forecast", withExtension: "json")
+        let url = bundle.url(forResource: name, withExtension: `extension`)
 
         return try! Data(contentsOf: url!)
     }
