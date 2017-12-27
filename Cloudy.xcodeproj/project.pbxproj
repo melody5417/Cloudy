@@ -14,7 +14,10 @@
 		4977F45B1FEFEAF7007DEA56 /* SettingsViewUnitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977F45A1FEFEAF7007DEA56 /* SettingsViewUnitsViewModel.swift */; };
 		4977F45D1FEFEBCB007DEA56 /* SettingsViewTemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977F45C1FEFEBCB007DEA56 /* SettingsViewTemperatureViewModel.swift */; };
 		4977F4621FEFF0E7007DEA56 /* SettingsRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977F4611FEFF0E7007DEA56 /* SettingsRepresentable.swift */; };
+		4F02EF5E1FF346550068FDA6 /* SettingsViewUnitsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F02EF5D1FF346550068FDA6 /* SettingsViewUnitsViewModelTests.swift */; };
+		4F02EF601FF346F30068FDA6 /* SettingsViewTemperatureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F02EF5F1FF346F30068FDA6 /* SettingsViewTemperatureViewModelTests.swift */; };
 		4FD5D66E1FF33BC5006EDF78 /* CloudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD5D66D1FF33BC5006EDF78 /* CloudyTests.swift */; };
+		4FD5D6891FF33E24006EDF78 /* SettingsViewTimeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD5D6881FF33E24006EDF78 /* SettingsViewTimeViewModelTest.swift */; };
 		4FFB1BBC1FF0EF7D00CD44AF /* WeatherDayRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB1BBB1FF0EF7D00CD44AF /* WeatherDayRepresentable.swift */; };
 		4FFB1BBE1FF0F10700CD44AF /* WeatherDayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB1BBD1FF0F10700CD44AF /* WeatherDayViewViewModel.swift */; };
 		CC08B9DB1DA206EE00754A85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */; };
@@ -61,9 +64,12 @@
 		4977F45A1FEFEAF7007DEA56 /* SettingsViewUnitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModel.swift; sourceTree = "<group>"; };
 		4977F45C1FEFEBCB007DEA56 /* SettingsViewTemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModel.swift; sourceTree = "<group>"; };
 		4977F4611FEFF0E7007DEA56 /* SettingsRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepresentable.swift; sourceTree = "<group>"; };
+		4F02EF5D1FF346550068FDA6 /* SettingsViewUnitsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModelTests.swift; sourceTree = "<group>"; };
+		4F02EF5F1FF346F30068FDA6 /* SettingsViewTemperatureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModelTests.swift; sourceTree = "<group>"; };
 		4FD5D66B1FF33BC5006EDF78 /* CloudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD5D66D1FF33BC5006EDF78 /* CloudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyTests.swift; sourceTree = "<group>"; };
 		4FD5D66F1FF33BC5006EDF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FD5D6881FF33E24006EDF78 /* SettingsViewTimeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModelTest.swift; sourceTree = "<group>"; };
 		4FFB1BBB1FF0EF7D00CD44AF /* WeatherDayRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayRepresentable.swift; sourceTree = "<group>"; };
 		4FFB1BBD1FF0F10700CD44AF /* WeatherDayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayViewViewModel.swift; sourceTree = "<group>"; };
 		CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -143,10 +149,21 @@
 		4FD5D66C1FF33BC5006EDF78 /* CloudyTests */ = {
 			isa = PBXGroup;
 			children = (
+				4FD5D6851FF33D68006EDF78 /* Test Cases */,
 				4FD5D66D1FF33BC5006EDF78 /* CloudyTests.swift */,
 				4FD5D66F1FF33BC5006EDF78 /* Info.plist */,
 			);
 			path = CloudyTests;
+			sourceTree = "<group>";
+		};
+		4FD5D6851FF33D68006EDF78 /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+				4FD5D6881FF33E24006EDF78 /* SettingsViewTimeViewModelTest.swift */,
+				4F02EF5D1FF346550068FDA6 /* SettingsViewUnitsViewModelTests.swift */,
+				4F02EF5F1FF346F30068FDA6 /* SettingsViewTemperatureViewModelTests.swift */,
+			);
+			path = "Test Cases";
 			sourceTree = "<group>";
 		};
 		4FFB1BBA1FF0EF4C00CD44AF /* Protocols */ = {
@@ -478,7 +495,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F02EF5E1FF346550068FDA6 /* SettingsViewUnitsViewModelTests.swift in Sources */,
 				4FD5D66E1FF33BC5006EDF78 /* CloudyTests.swift in Sources */,
+				4FD5D6891FF33E24006EDF78 /* SettingsViewTimeViewModelTest.swift in Sources */,
+				4F02EF601FF346F30068FDA6 /* SettingsViewTemperatureViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
