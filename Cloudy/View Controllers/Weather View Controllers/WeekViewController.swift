@@ -30,20 +30,6 @@ class WeekViewController: WeatherViewController {
         }
     }
 
-    // MARK: -
-
-    private lazy var dayFormatter: DateFormatter = {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE"
-        return dateFormatter
-    }()
-
-    private lazy var dateFormatter: DateFormatter = {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM d"
-        return dateFormatter
-    }()
-
     // MARK: - View Life Cycle
 
     override func viewDidLoad() {
