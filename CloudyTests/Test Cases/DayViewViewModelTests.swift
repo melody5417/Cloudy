@@ -106,14 +106,5 @@ class DayViewViewModelTests: XCTestCase {
         XCTAssertEqual(viewModelImage!.size.height, 172.0)
         XCTAssertEqual(imageDataViewModel, imageDataReference)
     }
-
-    // MARK: - Helper Methods
-
-    private func loadDataFromBundle() -> Data {
-        let bundle = Bundle(for: classForCoder)
-        let url = bundle.url(forResource: "forecast", withExtension: "json")
-
-        return try! Data(contentsOf: url!)
-    }
     
 }
